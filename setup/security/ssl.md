@@ -108,7 +108,7 @@ a self-signed Certificate Authority.
 
     ```bash
     openssl genrsa \
-      -des3 \
+      -sha256 \
       -out ca.key \
       -passout pass:${CA_KEY_PASSWORD} \
       4096
@@ -157,7 +157,7 @@ be imported into the JKS.
 
     ```bash
     openssl genrsa \
-      -des3 \
+      -sha256 \
       -out deck.key \
       -passout pass:${DECK_KEY_PASSWORD} \
       4096
@@ -197,7 +197,7 @@ Deck's eventual fully-qualified domain name (FQDN) as the Common Name (CN).
 
     ```bash
     openssl genrsa \
-      -des3 \
+      -sha256 \
       -out gate.key \
       -passout pass:${GATE_KEY_PASSWORD} \
       4096
