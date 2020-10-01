@@ -19,7 +19,7 @@ authority**
 
 1. Create the client key. Keep this file safe!
     ```
-    openssl genrsa -des3 -out client.key 4096
+    openssl genrsa -sha256 -out client.key 4096
     ```
 
 1. Generate a certificate signing request for the server. Ensure the `Common Name` is set to a non-empty value.
